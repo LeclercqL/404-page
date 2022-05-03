@@ -1,0 +1,46 @@
+/* le % ici permet de mettre la taille de la typo à 10px */
+html {
+    background: black;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+}
+
+.section-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.section-404 h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.section-404 h2 {
+    font-size: 3rem;
+}
+
+.section-404::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/404.gif);
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+}
